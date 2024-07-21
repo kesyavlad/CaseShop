@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const STEPS = [
   {
@@ -23,6 +24,7 @@ const STEPS = [
 
 const Steps = () => {
   const pathname = usePathname();
+  
 
   return (
     <ol className="rounded-md bg-white lg:flex lg:rounded-none lg:border-l lg:border-r lg:border-gray-200 ">
